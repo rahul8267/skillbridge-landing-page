@@ -1,0 +1,233 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #001f3d;
+  color: white;
+  z-index: 1000;
+}
+
+.desktop-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-logo {
+  display: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-left,
+.nav-right {
+  padding: 0 10px;
+  margin: 0 20px;
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-left a,
+.nav-right a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 19px;
+}
+
+.nav-left .logoD {
+  font-size: 21px;
+}
+
+/* ***************************MOBILE NAVBAR**************************** */
+
+/* Mobile hamburger toggle - hidden on desktop */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  color: red;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  line-height: 1;
+  align-items: end;
+}
+
+/* Mobile nav - hidden by default */
+.mobile-nav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  flex-direction: column;
+
+  padding: 1rem;
+  z-index: 999;
+  gap: 0.5rem;
+}
+
+.mobile-nav.active {
+  display: flex;
+}
+
+/* COMPONENT CSS STYLE */
+/* Hero PAGE Style */
+.Hero {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+  padding: 80px 20px;
+}
+
+.hero-text,
+.hero-details,
+.list-box {
+  padding: 5px;
+}
+
+.hero-cta {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.list-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 20px;
+}
+
+.list-box h3 {
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.list-box ol li,
+.hero-details {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.feature-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f8fafc;
+  padding: 70px 20px;
+}
+
+.feature-card {
+  background: white;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.About {
+  background: #e0f2fe;
+  padding: 70px 20px;
+}
+
+.About h3 {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.footer {
+  background: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.button {
+  background: #38bdf8;
+  color: #0f172a;
+  padding: 12px 26px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #0ea5e9;
+  color: white;
+}
+
+/* Mobile Display */
+
+@media (max-width: 376px) {
+  .header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 45px;
+    color: #fff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: auto;
+    padding-right: 1rem;
+  }
+
+  .mobile-logo {
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 1rem;
+  }
+
+  .mobile-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background: #23486a;
+    color: #fff;
+    flex-direction: column;
+    padding: 1rem;
+    z-index: 999;
+    gap: 0.5rem;
+  }
+
+  .mobile-nav.active {
+    padding: 5px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    right: 0;
+    /* display: none; */
+  }
+
+  .mobile-nav.active a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 25px;
+  }
+}
