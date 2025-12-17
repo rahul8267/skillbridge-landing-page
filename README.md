@@ -35,3 +35,7 @@ This project is **frontend-only** and does not use any backend or database.
 3.  npm install
 
 4. npm run dev
+
+
+## 🌐 Live Demo
+https://skill-bridge-landing-page.netlify.app
